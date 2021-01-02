@@ -1,6 +1,8 @@
 {
   "name": "industrial-control-app",
   "version": "0.1.0",
+  "description": "industrial business dashboard",
+  "author": "Timfan",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -14,6 +16,8 @@
   "main": "background.js",
   "dependencies": {
     "core-js": "^3.6.5",
+    "fabric": "^4.2.0",
+    "moment": "^2.29.1",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^8.4.2",
@@ -23,6 +27,7 @@
   },
   "devDependencies": {
     "@types/electron-devtools-installer": "^2.2.0",
+    "@types/fabric": "^3.6.8",
     "@types/node": "12",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",

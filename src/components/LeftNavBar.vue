@@ -17,6 +17,11 @@
         </v-list-item>
       </v-list-item-group>
     </v-list>
+    <v-card :elevation="0" class="pa-2">
+      <v-btn depressed @click="$emit('export')">
+        导出图片
+      </v-btn>
+    </v-card>
   </v-card>
 </template>
 
@@ -24,7 +29,7 @@
 import { Vue, Component, Ref } from "vue-property-decorator";
 
 @Component({})
-export default class Canvas extends Vue {
+export default class LeftNavBar extends Vue {
   items = [
     {
       icon: "mdi-inbox",

@@ -5,6 +5,9 @@
 </template>
 
 <script lang="ts">
+import fs from "fs";
+import http from "http";
+import { remote, BrowserWindow } from "electron";
 import { Vue, Component, Ref } from "vue-property-decorator";
 import { fabric } from "fabric";
 
@@ -107,6 +110,29 @@ export default class Canvas extends Vue {
   handleMouseMove(canvas: fabric.Canvas, opt: any): void {
     // TODO
     const delta = 2;
+  }
+
+  exportPhoto(): void {
+    if (this.fabricCanvas) {
+      const href = this.fabricCanvas.toDataURL({ format: "png" });
+      console.log(href);
+      const base64Data = href.replace(/^data:image\/png;base64,/, "");
+      fs.writeFile("/Users/fantingsheng/Desktop/img.png", href, err => {
+        console.log(err);
+      });
+      // remote.dialog.showOpenDialog(() => {
+      //   fs.readFile(href, "utf-8", (err, data) => {});
+      // });
+      // window.open(href);
+      // const file = fs.createWriteStream("pic.png");
+      // fs.writeFile("/", href, function(err) {
+      //   console.log(err);
+      // });
+      // http.get(href, function(response) {
+      //   response.pipe(file);
+      // });
+    }
+    console.log("export photo");
   }
 }
 </script>

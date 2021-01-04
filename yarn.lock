@@ -1030,7 +1030,7 @@
   resolved "https://registry.npm.taobao.org/@types/fabric/download/@types/fabric-3.6.9.tgz#4561a64b3f19c8ff7895621e98e96c18f410b984"
   integrity sha1-RWGmSz8ZyP94lWIemOlsGPQQuYQ=
 
-"@types/fs-extra@^9.0.1":
+"@types/fs-extra@^9.0.1", "@types/fs-extra@^9.0.6":
   version "9.0.6"
   resolved "https://registry.npm.taobao.org/@types/fs-extra/download/@types/fs-extra-9.0.6.tgz?cache=0&sync_timestamp=1608756343922&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Ffs-extra%2Fdownload%2F%40types%2Ffs-extra-9.0.6.tgz#488e56b77299899a608b8269719c1d133027a6ab"
   integrity sha1-SI5Wt3KZiZpgi4JpcZwdEzAnpqs=

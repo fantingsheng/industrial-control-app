@@ -15,5 +15,5 @@
 <script lang="ts">
 import { Vue, Component, Prop } from "vue-property-decorator";
 @Component({})
-export default class TheFooter extends Vue {}
+export default class TheAppBar extends Vue {}
 </script>

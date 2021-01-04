@@ -1,14 +1,16 @@
 <template>
-  <v-card class="fill-height"></v-card>
+  <v-card class="fill-height">
+    <Canvas />
+  </v-card>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
+import Canvas from "@/components/Canvas.vue"; // @ is an alias to /src
 
 @Component({
   components: {
-    HelloWorld
+    Canvas
   }
 })
 export default class Home extends Vue {}

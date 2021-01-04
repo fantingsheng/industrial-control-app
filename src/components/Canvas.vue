@@ -117,13 +117,9 @@ export default class Canvas extends Vue {
       const href = this.fabricCanvas.toDataURL({ format: "png" });
       console.log(href);
       const base64Data = href.replace(/^data:image\/png;base64,/, "");
-      fs.writeFile("/Users/fantingsheng/Desktop/img.png", href, err => {
-        console.log(err);
-      });
-      // remote.dialog.showOpenDialog(() => {
-      //   fs.readFile(href, "utf-8", (err, data) => {});
-      // });
-      // window.open(href);
+      // fs.writeFile("/Users/fantingsheng/Desktop/img.png", base64Data, "base64");
+      // remote.dialog.showOpenDialog({});
+      window.open(href);
       // const file = fs.createWriteStream("pic.png");
       // fs.writeFile("/", href, function(err) {
       //   console.log(err);

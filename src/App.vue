@@ -2,7 +2,7 @@
   <v-app>
     <TheAppBar />
 
-    <v-main class="mx-4">
+    <v-main class="mx-">
       <router-view v-if="routerVisible"></router-view>
     </v-main>
 

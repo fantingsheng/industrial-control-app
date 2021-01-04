@@ -82,7 +82,7 @@ export default class Canvas extends Vue {
 
   drawGrid(canvas: fabric.Canvas): void {
     const gap = 10;
-    for (let i = 1; i * gap < this.height; i++) {
+    for (let i = 0; i * gap < this.height; i++) {
       const line = new fabric.Line([0, gap * i, this.width, gap * i], {
         fill: "#eee",
         stroke: "#eee",
@@ -92,7 +92,7 @@ export default class Canvas extends Vue {
       });
       canvas.add(line);
     }
-    for (let i = 1; i * gap < this.width; i++) {
+    for (let i = 0; i * gap < this.width; i++) {
       const line = new fabric.Line([gap * i, 0, gap * i, this.height], {
         fill: "#eee",
         stroke: "#eee",

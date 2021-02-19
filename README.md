@@ -8,6 +8,8 @@
 
 Electron 成为跨平台的首选方案。
 
+![](https://github.com/fantingsheng/industrial-control-app/blob/main/src/assets/screen.png)
+
 ## Project setup
 
 ```

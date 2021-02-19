@@ -8,7 +8,7 @@
       cols="5"
       class="py-2 text-right text-overline font-weight-regular"
       align="end"
-      >@{{ new Date().getFullYear() }} 太空编程</v-col
+      >@{{ new Date().getFullYear() }} spaceXCode</v-col
     >
   </v-footer>
 </template>

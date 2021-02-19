@@ -1,6 +1,6 @@
 # 工控软件客户端
 
-技术栈采用: Electron + Vue + Typescript + Vuetify
+技术栈采用：Electron + Vue + Typescript + Vuetify
 
 移动互联网已成过去式，随着人工智能的慢慢成熟，工业互联网即将迎来一波热潮，应用平台选择 Mac OS、 Linux or Window?
 
